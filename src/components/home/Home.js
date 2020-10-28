@@ -62,7 +62,7 @@ function Home(props) {
 
   useEffect(
     function () {
-      let country = " Ireland"
+      let country = "Ireland"
       fetch(`${server}weather?q=${country}&units=metric&APPID=${key}`)
         .then((res) => res.json())
         .then((result) => {
